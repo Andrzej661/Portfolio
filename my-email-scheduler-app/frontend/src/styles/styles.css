@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.folder::before {
+    content: '';
+    display: block;
+    width: 98%;
+    height: 35%;
+    background-color: #ffffff;
+    border-radius: 0.25rem 0.25rem 0 0;
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    z-index: 10;
+  }
+  .folder::after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 2%;
+    background-color: #a0a0a0;
+    border-radius: 0.25rem 0.25rem 0 0;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    z-index: 10;
+  }
+  .folder-sheet-text::after{
+    content: '';
+    display: block;
+    width: 90%;
+    height: 2%;
+    background-color: #a0a0a0;
+    border-radius: 0.25rem 0.25rem 0 0;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    z-index: 20;
+  }
+  .folder-sheet-text::before{
+    content: '';
+    display: block;
+    width: 90%;
+    height: 2%;
+    background-color: #a0a0a0;
+    border-radius: 0.25rem 0.25rem 0 0;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    z-index: 20;
+  }
+  .folder-tab {
+    content: '';
+    display: block;
+    width: 20%; /* Adjust the width as necessary */
+    height: 20px; /* Adjust the height as necessary */
+    background-color: rgb(234 179 8); /* Tailwind's amber-400 for the tab color */
+    border-top-left-radius: 0.5rem; /* Rounded corner on the top-left */
+    border-top-right-radius: 0.5rem; /* Rounded corner on the top-right */
+    position: absolute;
+    top: -10px; /* Half the height to make it appear as a tab */
+    left: 0; /* Position from the left */
+    z-index: 10; /* Ensure it's above the folder front */
+  }
+  @layer utilities {
+    @keyframes animate-svg-fill-1 {
+      0% {
+        fill: transparent;
+      }
+      100% {
+        fill: rgb(0, 0, 0);
+      }
+    }
+  
+    @keyframes animate-svg-fill-2 {
+      0% {
+        fill: transparent;
+      }
+      100% {
+        fill: rgb(0, 0, 0);
+      }
+    }
+  
+    @keyframes animate-svg-fill-3 {
+      0% {
+        fill: transparent;
+      }
+      100% {
+        fill: rgb(0, 0, 0);
+      }
+    }
+  
+    @keyframes animate-svg-fill-4 {
+      0% {
+        fill: transparent;
+      }
+      100% {
+        fill: rgb(0, 0, 0);
+      }
+    }
+  }
+  
